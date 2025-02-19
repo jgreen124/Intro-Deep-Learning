@@ -108,6 +108,8 @@ The `knn.py` script imports the `mnist.pkl` data, looping through a specified da
 ```
 insert code for knn_tester here
 ```
+The output from the `knn_tester.py` script is shown below:
+```
 insert results for knn_tester here
 ```
 
