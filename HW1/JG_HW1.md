@@ -10,7 +10,7 @@ The MNIST dataset can be downloaded using the `download_mnist.py` script. This s
 - `y_test` a 1x10,000 numpy array that each component is the true label of the corresponding test images
 
 The source code for `download_mnist.py` is shown below:
-``
+```
 import numpy as np
 from urllib import request
 import gzip
@@ -54,4 +54,4 @@ def load():
 
 if __name__ == '__main__':
     init()
-``
+```
