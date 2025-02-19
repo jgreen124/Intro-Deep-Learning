@@ -1,6 +1,6 @@
-#Introduction to Deep Learning - Homework 1
+# Introduction to Deep Learning - Homework 1
 
-##Problem 1 (KNN)
+## Problem 1 (KNN)
 This first problem asks us to use a KNN to recognize handwritten digits.
 
 The MNIST dataset can be downloaded using the 'download_mnist.py' script. This script generates an 'mnist.pkl' file that contains the data converted to numpy arrays. These files are:
