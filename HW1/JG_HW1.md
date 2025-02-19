@@ -101,6 +101,8 @@ The `knn.py` script imports the `mnist.pkl` data, looping through a specified da
 insert code for knn_tester here
 ```
 
+The `knn_tester.py` script is a modified version of `knn.py` that runs the knn with both L1 and L2 distances as well as with different k values. 
+
 ### Output from `knn_tester.py`
 ```
 insert results for knn_tester here
