@@ -106,12 +106,14 @@ print ("---execution time: %s seconds ---" % (time.time() - start_time))
 
 The `knn.py` script imports the `mnist.pkl` data, looping through a specified data set doing distance calculations. Then, the k nearest neighbors are calculated to classify the image. The `knn_tester.py` script is a modified version  of `knn.py` that loops through, testing different k values and uses both L1 and L2 distance calculations. The source code for `knn_tester.py` is shown below:
 ```
-insert code for knn_tester here```
+insert code for knn_tester here
 ```
-insert results for knn_tester here```
+insert results for knn_tester here
+```
 
 ```
-insert observations about L1, L2 distances and accuracy as k changes here```
+insert observations about L1, L2 distances and accuracy as k changes here
+```
 
 ---
 ## Problem 2 (Linear Classifier)
