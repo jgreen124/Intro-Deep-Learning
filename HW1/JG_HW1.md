@@ -55,7 +55,7 @@ def load():
 if __name__ == '__main__':
     init()
 ```
----
+
 
 Next, the `mnist.pkl` file can be imported into the `knn.py` script. The source code for `knn.py` is shown below:
 ```
@@ -122,5 +122,9 @@ insert observations about L1, L2 distances and accuracy as k changes here
 The second problem asks us to train a linear classifier to recognize handwritten digits.
 
  The `linear_classifier.py` scipt implements a linear classifier to accomplish the handwriting recognition. This linear classifier uses "Cross Entropy" for the loss function and uses a "Random Search" to find the parameters W. Afterwards, the accuracy of the linear classifier is tested using the MNIST testing set. The code for `linear_classifier.py` is shown below:
- ```insert code for linear_classifier.py here``` 
-```insert results for linear_classifier.py here```
+ ```
+ insert code for linear_classifier.py here
+ ``` 
+```
+insert results for linear_classifier.py here
+```
