@@ -36,8 +36,8 @@ for distance_type in ['L1', 'L2']:
     # Loop through different k values
     for k in range(1, 11):
         start_time = time.time()
-        outputlabels = kNNClassify(x_test[0:50], x_train, y_train, k, distance_type)
-        result = y_test[0:50] - outputlabels
+        outputlabels = kNNClassify(x_test[0:1000], x_train, y_train, k, distance_type)
+        result = y_test[0:1000] - outputlabels
         accuracy = (1 - np.count_nonzero(result)/len(outputlabels))
         execution_time = time.time() - start_time
         
