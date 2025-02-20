@@ -105,7 +105,91 @@ The `knn_tester.py` script is a modified version of `knn.py` that runs the knn w
 
 ### Output from `knn_tester.py`
 ```
-insert results for knn_tester here
+Testing L1 Distance:
+==================================================
+k=1:
+---classification accuracy for knn on mnist: 0.9500 ---
+---execution time: 123.90 seconds ---
+--------------------------------------------------
+k=2:
+---classification accuracy for knn on mnist: 0.9430 ---
+---execution time: 126.50 seconds ---
+--------------------------------------------------
+k=3:
+---classification accuracy for knn on mnist: 0.9530 ---
+---execution time: 128.91 seconds ---
+--------------------------------------------------
+k=4:
+---classification accuracy for knn on mnist: 0.9460 ---
+---execution time: 128.22 seconds ---
+--------------------------------------------------
+k=5:
+---classification accuracy for knn on mnist: 0.9510 ---
+---execution time: 128.85 seconds ---
+--------------------------------------------------
+k=6:
+---classification accuracy for knn on mnist: 0.9490 ---
+---execution time: 127.98 seconds ---
+--------------------------------------------------
+k=7:
+---classification accuracy for knn on mnist: 0.9460 ---
+---execution time: 128.89 seconds ---
+--------------------------------------------------
+k=8:
+---classification accuracy for knn on mnist: 0.9420 ---
+---execution time: 128.22 seconds ---
+--------------------------------------------------
+k=9:
+---classification accuracy for knn on mnist: 0.9410 ---
+---execution time: 128.45 seconds ---
+--------------------------------------------------
+k=10:
+---classification accuracy for knn on mnist: 0.9340 ---
+---execution time: 129.16 seconds ---
+--------------------------------------------------
+
+Testing L2 Distance:
+==================================================
+k=1:
+---classification accuracy for knn on mnist: 0.9620 ---
+---execution time: 149.86 seconds ---
+--------------------------------------------------
+k=2:
+---classification accuracy for knn on mnist: 0.9480 ---
+---execution time: 150.23 seconds ---
+--------------------------------------------------
+k=3:
+---classification accuracy for knn on mnist: 0.9620 ---
+---execution time: 150.35 seconds ---
+--------------------------------------------------
+k=4:
+---classification accuracy for knn on mnist: 0.9640 ---
+---execution time: 149.90 seconds ---
+--------------------------------------------------
+k=5:
+---classification accuracy for knn on mnist: 0.9610 ---
+---execution time: 150.04 seconds ---
+--------------------------------------------------
+k=6:
+---classification accuracy for knn on mnist: 0.9590 ---
+---execution time: 150.51 seconds ---
+--------------------------------------------------
+k=7:
+---classification accuracy for knn on mnist: 0.9620 ---
+---execution time: 152.00 seconds ---
+--------------------------------------------------
+k=8:
+---classification accuracy for knn on mnist: 0.9580 ---
+---execution time: 150.28 seconds ---
+--------------------------------------------------
+k=9:
+---classification accuracy for knn on mnist: 0.9520 ---
+---execution time: 149.62 seconds ---
+--------------------------------------------------
+k=10:
+---classification accuracy for knn on mnist: 0.9540 ---
+---execution time: 150.26 seconds ---
+--------------------------------------------------
 ```
 
 ### Observations on L1 and L2 Distances and Accuracy as k Changes
