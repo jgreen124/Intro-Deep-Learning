@@ -97,6 +97,12 @@ print("---classification accuracy for knn on mnist: %s ---" % result)
 print("---execution time: %s seconds ---" % (time.time() - start_time))
 ```
 
+### Output from `knn.py`
+```
+---classification accuracy for knn on mnist: 1.0 ---
+---execution time: 4.4463958740234375 seconds ---
+```
+
 ### KNN Tester Information
 
 The `knn_tester.py` script is a modified version of `knn.py` that runs the knn with both L1 and L2 distances as well as with different k values. 
