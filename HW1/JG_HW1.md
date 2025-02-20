@@ -98,6 +98,7 @@ print("---execution time: %s seconds ---" % (time.time() - start_time))
 ```
 
 ### Output from `knn.py`
+The output from `knn.py` is shown below for a k value of 7 and for 20 images classified.
 ```
 ---classification accuracy for knn on mnist: 1.0 ---
 ---execution time: 4.4463958740234375 seconds ---
@@ -106,6 +107,8 @@ print("---execution time: %s seconds ---" % (time.time() - start_time))
 ### KNN Tester Information
 
 The `knn_tester.py` script is a modified version of `knn.py` that runs the knn with both L1 and L2 distances as well as with different k values. 
+
+**_NOTE:_** `knn_tester.py` is classifying 1000 images compared to `knn.py` only classifying 20 images. This was done to get a better representation of the accuracy of the model, and is also why the reported times by the scripts are so different.
 
 ### `knn_tester.py` Script
 ```python
@@ -249,9 +252,7 @@ k=10:
 ```
 
 ### Observations on L1 and L2 Distances and Accuracy as k Changes
-```
-insert observations about L1, L2 distances and accuracy as k changes here
-```
+After running the `knn_tester.py` script, it can be observed that the accuracy improved and the runtime increased when using the L2 distance formula. From my small sample size, the reported times don't show a correlation between accuracy and an increased K value. As K increases, we initially see the accuracy increase, but we eventually get to a point where we start considering neighbors that are unrelated to an image we are looking at, which can account for the lower accuracy as K gets closer to 10.
 
 ---
 
