@@ -5,12 +5,18 @@
 This first problem asks us to use a KNN to recognize handwritten digits.
 
 ### Dataset Information
-The MNIST dataset can be downloaded using the `download_mnist.py` script. This script generates an `mnist.pkl` file that contains the data converted to numpy arrays. The MNIST dataset includes:
+The MNIST dataset can be downloaded using the `download_mnist.py` script. This script generates an `mnist.pkl` file that contains the data converted to numpy arrays. The MNIST dataset consists of:
 
 - `x_train`: A 60,000x784 numpy array containing flattened training images.
 - `y_train`: A 1x60,000 numpy array that corresponds to the true label of the corresponding training images.
 - `x_test`: A 10,000x784 numpy array where each row contains flattened versions of test images.
 - `y_test`: A 1x10,000 numpy array where each component is the true label of the corresponding test images.
+
+There are four compressed files representing the above sets of numpy arrays:
+- `train-images-idx3-ubyte.gz`: contains the `x_train` data
+- `train-labels-idx1-ubyte.gz`: contains the `y_train` data
+- `t10k-images-idx3-ubyte.gz`: contains the `x_test` data
+- `t10k-labels-idx1-ubyte.gz`: contains the `y_test` data
 
 ### Source Code for `download_mnist.py`
 ```python
@@ -61,6 +67,15 @@ if __name__ == '__main__':
 ### KNN Information
 The `knn.py` script imports the `mnist.pkl` data, looping through a specified data set performing distance calculations. Then, the k-nearest neighbors are calculated to classify the image.
 
+There are two distance calculations that can be used:
+- L1 distance is the Manhattan distance, defined as
+ $$
+D = \sum_{i=1}^{n} |x_i - y_i|$$
+- L2 distnace is the Euclidian distance, defined as
+$$
+D = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2}$$
+**NOTE:** The knn.py script implements the L2 distance formula
+
 ### Source Code for `knn.py`
 ```python
 import math
@@ -108,7 +123,7 @@ The output from `knn.py` is shown below for a k value of 7 and for 20 images cla
 
 The `knn_tester.py` script is a modified version of `knn.py` that runs the knn with both L1 and L2 distances as well as with different k values. 
 
-**_NOTE:_** `knn_tester.py` is classifying 1000 images compared to `knn.py` only classifying 20 images. This was done to get a better representation of the accuracy of the model, and is also why the reported times by the scripts are so different.
+**_NOTE:_** `knn_tester.py` is classifying 1000 images compared to `knn.py` only classifying 20 images. This was done to get a better representation of the accuracy of the model, and is also why the reported times by the scripts are different.
 
 ### `knn_tester.py` Script
 ```python
@@ -251,7 +266,7 @@ k=10:
 --------------------------------------------------
 ```
 
-### Observations on L1 and L2 Distances and Accuracy as k Changes
+### Observations on L1 and L2 Distances and Accuracy as K Changes
 After running the `knn_tester.py` script, it can be observed that the accuracy improved and the runtime increased when using the L2 distance formula. From my small sample size, the reported times don't show a correlation between accuracy and an increased K value. As K increases, we initially see the accuracy increase, but we eventually get to a point where we start considering neighbors that are unrelated to an image we are looking at, which can account for the lower accuracy as K gets closer to 10.
 
 ---
