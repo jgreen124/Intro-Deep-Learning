@@ -69,19 +69,19 @@ if __name__ == '__main__':
 The `knn.py` script imports the `mnist.pkl` data, looping through a specified data set performing distance calculations. Then, the k-nearest neighbors are calculated to classify the image.
 
 There are two distance calculations that can be used:
-- L1 distance is the Manhattan distance, defined as  
-  $$
 
-  D = \sum_{i=1}^{n} |x_i - y_i|
-  
-  $$
+- L1 distance is the Manhattan distance, defined as  
+<div align="center">
+
+![Manhattan Distance](https://latex.codecogs.com/svg.latex?D%20%3D%20%5Csum_%7Bi%3D1%7D%5En%20%7Cx_i%20-%20y_i%7C)
+</div>
 
 - L2 distance is the Euclidean distance, defined as  
-  $$
 
-  D = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2}
-  
-  $$
+<div align="center">
+
+![Euclidean Distance](https://latex.codecogs.com/svg.latex?D%20%3D%20%5Csqrt%7B%5Csum_%7Bi%3D1%7D%5En%20(x_i%20-%20y_i)%5E2%7D)
+</div>
 
 **NOTE:** The knn.py script implements the L2 distance formula
 
