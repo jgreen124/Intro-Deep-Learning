@@ -1,4 +1,5 @@
 # Introduction to Deep Learning - Homework 1
+**Josh Green**
 
 ## Problem 1: K-Nearest Neighbors (KNN)
 
