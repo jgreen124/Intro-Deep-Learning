@@ -71,12 +71,16 @@ The `knn.py` script imports the `mnist.pkl` data, looping through a specified da
 There are two distance calculations that can be used:
 - L1 distance is the Manhattan distance, defined as  
   $$
+
   D = \sum_{i=1}^{n} |x_i - y_i|
+  
   $$
 
 - L2 distance is the Euclidean distance, defined as  
   $$
+
   D = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2}
+  
   $$
 
 **NOTE:** The knn.py script implements the L2 distance formula
