@@ -7,7 +7,7 @@ filename = [
 ["training_images","train-images-idx3-ubyte.gz"],
 ["test_images","t10k-images-idx3-ubyte.gz"],
 ["training_labels","train-labels-idx1-ubyte.gz"],
-["test_labels","t10k-labels-idx1-ubyte.gz"]
+["test_labels","t10k-labelsz-idx1-ubyte.gz"]
 ]
 
 def download_mnist():
